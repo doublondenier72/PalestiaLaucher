@@ -12,7 +12,7 @@
     "servers": [
         {
             "id": "WesterosCraft-1.11.2",
-            "name": "WesterosCraft Production Server",
+            "name": "WesterosCraft Serveur de etst",
             "description": "Main WesterosCraft server. Connect to enter the Realm.",
             "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-prod.png",
             "version": "3.9.4",
@@ -841,10 +841,10 @@
         {
             "id": "WesterosCraftTest-1.12.2",
             "name": "WesterosCraft 1.12.2 Test Server",
-            "description": "Tests for our version change to 1.12.2 are live here.",
+            "description": "test pour le sreveur.",
             "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/server-test.png",
             "version": "4.2.1",
-            "address": "mc.westeroscraft.com:4445",
+            "address": "193.168.147.23:25000",
             "minecraftVersion": "1.12.2",
             "discord": {
                 "shortId": "1.12.2 Test Server",

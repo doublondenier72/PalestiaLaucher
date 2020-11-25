@@ -359,10 +359,10 @@ function bindAuthAccountLogOut(){
             if(Object.keys(ConfigManager.getAuthAccounts()).length === 1){
                 isLastAccount = true
                 setOverlayContent(
-                    'Warning<br>This is Your Last Account',
-                    'In order to use the launcher you must be logged into at least one account. You will need to login again after.<br><br>Are you sure you want to log out?',
-                    'I\'m Sure',
-                    'Cancel'
+                    'Attention<br>Vous allez enlever votre compte Mojang',
+                    'Êtes vous sûr de vouloir enlever votre compte?',
+                    'Je suis sûr',
+                    'Annuler'
                 )
                 setOverlayHandler(() => {
                     processLogOut(val, isLastAccount)
@@ -449,7 +449,7 @@ function populateAuthAccounts(){
             <div class="settingsAuthAccountRight">
                 <div class="settingsAuthAccountDetails">
                     <div class="settingsAuthAccountDetailPane">
-                        <div class="settingsAuthAccountDetailTitle">Username</div>
+                        <div class="settingsAuthAccountDetailTitle">Nom d'utilisateur</div>
                         <div class="settingsAuthAccountDetailValue">${acc.displayName}</div>
                     </div>
                     <div class="settingsAuthAccountDetailPane">
@@ -458,9 +458,9 @@ function populateAuthAccounts(){
                     </div>
                 </div>
                 <div class="settingsAuthAccountActions">
-                    <button class="settingsAuthAccountSelect" ${selectedUUID === acc.uuid ? 'selected>Selected Account &#10004;' : '>Select Account'}</button>
+                    <button class="settingsAuthAccountSelect" ${selectedUUID === acc.uuid ? 'selected>Compte séléctionné &#10004;' : '>Séléctionner le compte'}</button>
                     <div class="settingsAuthAccountWrapper">
-                        <button class="settingsAuthAccountLogOut">Log Out</button>
+                        <button class="settingsAuthAccountLogOut">Se déconnetcter</button>
                     </div>
                 </div>
             </div>
